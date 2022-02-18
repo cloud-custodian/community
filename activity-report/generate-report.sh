@@ -1,7 +1,7 @@
 #!/bin/bash
 
-if [ -z "$2" ]; then
-  echo "Please supply a repo in the form of org/repo and an organization name (e.g. rancher)"
+if [[ $# != 1 || ! "$1" =~ "/" ]]; then
+  echo "Please supply a repo in the form of org/repo (e.g. cloud-custodian/cloud-custodian)"
   exit 1
 fi
 
@@ -15,7 +15,7 @@ fi
 WEEK_NO=$(date +"%U %Y")
 TEMPLATE="{{range .}}* [#{{.number}}]({{.url}}):  {{.title}}{{\"\n\"}}{{end}}"
 REPO_NAME=$1
-ORG=$2
+read -r -d '/' ORG <<< "$REPO_NAME"
 ORG_NAME="$(gh api -X GET "orgs/"$ORG"/members" -F per_page=100 --paginate --cache 1h --template='{{range .}}-author:{{.login}} {{end}}')"
 read -r FORKS STARS < <(gh api -X GET "repos/"$REPO_NAME"" --template='{{.forks}} {{.stargazers_count}}')
 
