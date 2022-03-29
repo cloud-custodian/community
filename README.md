@@ -1,6 +1,8 @@
 # c7n Community
 
-Welcome to the Cloud Custodian Community! 
+Welcome to the Cloud Custodian Community!
+
+[Community Calendar](https://cloudcustodian.io/events/index.html) - This is where you can find a calendar of all our community events including our [bi-weekly community meetings](https://github.com/cloud-custodian/community/discussions).
 
 [Project Board](https://github.com/cloud-custodian/community/projects/1) - Project-level community items, start here if you're looking for an overview of what we're working on and where we could use a hand! 
 
