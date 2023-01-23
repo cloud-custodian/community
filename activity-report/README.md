@@ -12,6 +12,10 @@ After installation, you'll need to login:
 
 Then run the script:
 
-./generate-report.sh cloud-custodian/cloud-custodian cloud-custodian
+    ./generate-report.sh cloud-custodian/cloud-custodian cloud-custodian
+
+or use this convenient shortcut from the root:
+
+    just report
 
 And then paste the output into your notetaking app. 
