@@ -19,7 +19,7 @@ This template provides the project with a framework to inform the TOC of their c
 
 Project Repo(s): https://github.com/cloud-custodian/cloud-custodian
 Project Site: https://cloudcustodian.io
-Sub-Projects: TODO: List just providers? Or extras like pytest-terraform, tfparse, cel?
+Sub-Projects: Provider/tool sub-projects are only built and published as part of a c7n distribution.
 Communication: https://cloudcustodian.io/community/
 
 Project points of contacts: [Mailing List](https://groups.google.com/forum/#!forum/cloud-custodian), [Security](mailto:security@cloudcustodian.io)
@@ -34,7 +34,7 @@ Project points of contacts: [Mailing List](https://groups.google.com/forum/#!for
 
 ### Adoption Assertion
 
-_The project has been adopted by the following organizations in a testing and integration or production capacity:_
+[ADOPTERS.md](https://github.com/cloud-custodian/cloud-custodian/blob/main/ADOPTERS.md) contains a number of organizations that have publicly documented their Cloud Custodian use.
 
 ## Application Process Principles
 
@@ -46,7 +46,6 @@ _The project has been adopted by the following organizations in a testing and in
 <!-- (Project assertion goes here) -->
 
 ### Required
-
 
 - [ ] **Complete a [General Technical Review (GTR)](../../toc_subprojects/project-reviews-subproject/general-technical-questions.md).**
   - This was most recently revised on DD-MMM-YYYY and can be discovered at $LINK.
@@ -269,11 +268,11 @@ N/A
 
 ### Required
 
-- [ ] **Publicly documented list of adopters, which may indicate their adoption level (dev/trialing, prod, etc.)**
+- [x] **Publicly documented list of adopters, which may indicate their adoption level (dev/trialing, prod, etc.)**
 
 <!-- (Project assertion goes here) -->
 
-- [ ] **Used in appropriate capacity by at least 3 independent + indirect/direct adopters, (these are not required to be in the publicly documented list of adopters)**
+- [x] **Used in appropriate capacity by at least 3 independent + indirect/direct adopters, (these are not required to be in the publicly documented list of adopters)**
 
 <!-- (Project assertion goes here) -->
 
